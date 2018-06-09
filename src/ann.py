@@ -27,6 +27,7 @@ dataset = pd.read_csv('Churn_Modelling.csv')
 X = dataset.iloc[:, 3:13].values # Remove useless cloumn, here the first 3 columns
 y = dataset.iloc[:, 13].values
 
+
 # Encoding categorical data
 # Encoding the Independent Variable
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
